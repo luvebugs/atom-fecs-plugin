@@ -1,0 +1,67 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.fecs-line-warning {
+    background: fade(@background-color-warning, 20%);
+}
+.cursor-line.fecs-line-warning {
+    background: fade(@background-color-warning, 10%);
+}
+.fecs-line-error {
+    background: fade(@background-color-error, 20%);
+}
+.cursor-line.fecs-line-error {
+    background: fade(@background-color-error, 10%);
+}
+
+.gutter {
+    .fecs-line-number-error {
+        color: @text-color-error !important;
+        opacity: 1;
+        &:hover {
+            background-color: @background-color-highlight;
+        }
+    }
+    .fecs-line-number-warning {
+        color: @text-color-warning !important;
+        opacity: 1;
+        &:hover {
+            background-color: @background-color-highlight;
+        }
+    }
+}
+.atom-fecs-message {
+    font-size: 12px;
+    color: #d5f8d6;
+    background-color: #326943;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    overflow: hidden;
+    .atom-fecs-line-message {
+        background-color: #295436;
+        margin-bottom: 8px;
+        padding: 4px 8px;
+    }
+
+}
+
+.atom-fecs-plugin {
+    display: inline-block;
+    vertical-align: middle;
+    .icon {
+        cursor: pointer;
+        line-height: 25px;
+        margin-right: 10px;
+    }
+    .atom-fecs-info {
+        max-width: 300px;
+        overflow: hidden;
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+}

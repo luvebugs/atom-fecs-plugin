@@ -1,0 +1,24 @@
+{
+    "name": "atom-fecs-plugin",
+    "main": "./lib/atom-fecs-plugin",
+    "version": "0.0.0",
+    "description": "A short description of your package",
+    "keywords": [],
+    "consumedServices": {
+        "status-bar": {
+            "versions": {
+                "^1.0.0": "consumeStatusBar"
+            }
+        }
+    },
+    "activationCommands": {},
+    "repository": "https://github.com/aprday/atom-fecs-plugin",
+    "license": "MIT",
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "dependencies": {
+        "fecs": "^1.4.1",
+        "figlet": "^1.2.0"
+    }
+}
