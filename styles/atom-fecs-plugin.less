@@ -35,16 +35,11 @@
 }
 .atom-fecs-message {
     font-size: 12px;
-    color: #d5f8d6;
-    background-color: #326943;
-    padding-top: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
     overflow: hidden;
+    padding: 8px 0;
+    background-color: @background-color-highlight;
     .atom-fecs-line-message {
-        background-color: #295436;
-        margin-bottom: 8px;
-        padding: 4px 8px;
+        padding: 2px 8px;
     }
 
 }
@@ -55,7 +50,11 @@
     .icon {
         cursor: pointer;
         line-height: 25px;
-        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        span {
+            padding: 4px 4px;
+        }
     }
     .atom-fecs-info {
         max-width: 300px;
